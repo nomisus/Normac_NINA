@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/lblMech"
+        android:background="#2d81c3"
+        android:text="@string/mech"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:textColor="#ffffff"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mechHvacLayout">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:columnOrderPreserved="false"
+            android:id="@+id/mechHvacGrid">
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:layout_rowSpan="3"
+                android:id="@+id/mechNoteGridSpace" />
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_row="0"
+                android:layout_column="3"
+                android:id="@+id/mechNoteGridSpace1"
+                android:layout_rowSpan="3" />
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_row="0"
+                android:layout_column="5"
+                android:id="@+id/mechNoteGridSpace2"
+                android:layout_rowSpan="4" />
+
+            <TextView
+                android:id="@+id/lblmechElev"
+                android:text="@string/mechElev"
+                android:layout_width="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textIsSelectable="true"
+                android:layout_row="1"
+                android:layout_column="1" />
+
+            <Spinner
+                android:id="@+id/spinnerMechElev"
+                android:background="@drawable/spinner_background_holo_light"
+                android:layout_width="200dp"
+                android:entries="@array/yesNo_array"
+                android:layout_height="wrap_content"
+                android:layout_row="1"
+                android:layout_column="2"
+                android:spinnerMode="dropdown" />
+
+            <EditText
+                android:id="@+id/editMechElev_chkbx8"
+                android:layout_width="75dp"
+                android:layout_height="35dp"
+                android:textColor="@android:color/primary_text_light"
+                android:background="@drawable/edit_text_holo_light"
+                android:ems="10"
+                android:layout_row="1"
+                android:layout_column="4"
+                android:hint="@string/mechHint1"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/editMechElev_chkbx9"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:textColor="@android:color/primary_text_light"
+                android:background="@drawable/edit_text_holo_light"
+                android:ems="10"
+                android:layout_row="1"
+                android:layout_column="6"
+                android:hint="@string/mechHint2"
+                android:textAlignment="center" />
+
+        </GridLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/lblListItem"
+        android:text="@string/mechHsys"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:textColor="@android:color/black"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mechHvacChckbxLayout">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:columnOrderPreserved="false"
+            android:id="@+id/mechHvacChckbxGrid">
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:layout_rowSpan="6"
+                android:id="@+id/mechHvacChckbxGridSpace" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/mechHvac_chkbx1"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:checked="false"
+                android:text="@string/mechHvac_chkbx1" />
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="20px"
+                android:layout_row="0"
+                android:layout_column="2"
+                android:id="@+id/mechHvacChckbxGridSpace1"
+                android:layout_rowSpan="6" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/mechHvac_chkbx6"
+                android:layout_row="0"
+                android:layout_column="3"
+                android:checked="false"
+                android:text="@string/mechHvac_chkbx6" />
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="20px"
+                android:layout_row="0"
+                android:layout_column="4"
+                android:id="@+id/mechHvacChckbxGridSpace2"
+                android:layout_rowSpan="8" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/mechHvac_chkbx11"
+                android:layout_row="0"
+                android:layout_column="5"
+                android:checked="false"
+                android:text="@string/mechHvac_chkbx11" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/mechHvac_chkbx2"
+                android:layout_row="1"
+                android:layout_column="1"
+                android:checked="false"
+                android:text="@string/mechHvac_chkbx2" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/mechHvac_chkbx7"
+                android:layout_row="1"
+                android:layout_column="3"
+                android:checked="false"
+                android:text="@string/mechHvac_chkbx7" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/mechHvac_chkbx12"
+                android:layout_row="1"
+                android:layout_column="5"
+                android:checked="false"
+                android:text="@string/mechHvac_chkbx12" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/mechHvac_chkbx3"
+                android:layout_row="2"
+                android:layout_column="1"
+                android:checked="false"
+                android:text="@string/mechHvac_chkbx3" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/mechHvac_chkbx8"
+                android:layout_row="2"
+                android:layout_column="3"
+                android:checked="false"
+                android:text="@string/mechHvac_chkbx8" />
+
+            <EditText
+                android:id="@+id/editMechHvac_chkbx1"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:textColor="@android:color/primary_text_light"
+                android:background="@drawable/edit_text_holo_light"
+                android:ems="10"
+                android:layout_row="2"
+                android:layout_column="5"
+                android:inputType="text" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/mechHvac_chkbx4"
+                android:layout_row="3"
+                android:layout_column="1"
+                android:checked="false"
+                android:text="@string/mechHvac_chkbx4" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/mechHvac_chkbx9"
+                android:layout_row="3"
+                android:layout_column="3"
+                android:checked="false"
+                android:text="@string/mechHvac_chkbx9" />
+
+            <EditText
+                android:id="@+id/editMechHvac_chkbx2"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:textColor="@android:color/primary_text_light"
+                android:background="@drawable/edit_text_holo_light"
+                android:ems="10"
+                android:layout_row="3"
+                android:layout_column="5"
+                android:inputType="text" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/mechHvac_chkbx5"
+                android:layout_row="4"
+                android:layout_column="1"
+                android:checked="false"
+                android:text="@string/mechHvac_chkbx5" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/mechHvac_chkbx10"
+                android:layout_row="4"
+                android:layout_column="3"
+                android:checked="false"
+                android:text="@string/mechHvac_chkbx10" />
+
+            <EditText
+                android:id="@+id/editMechHvac_chkbx3"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:textColor="@android:color/primary_text_light"
+                android:background="@drawable/edit_text_holo_light"
+                android:ems="10"
+                android:layout_row="4"
+                android:layout_column="5"
+                android:inputType="text" />
+
+        </GridLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mechHvacNotesLayout" >
+
+        <TextView
+            android:id="@+id/lblMechHvac"
+            android:text="@string/otherNote"
+            android:layout_width="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_height="wrap_content"
+            android:textSize="20sp" />
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:columnOrderPreserved="false"
+            android:id="@+id/mechHvacGridLayout" >
+
+            <EditText
+                android:id="@+id/editMechHvacNote"
+                android:layout_width="680dp"
+                android:layout_height="35dp"
+                android:textColor="@android:color/primary_text_light"
+                android:background="@drawable/edit_text_holo_light"
+                android:ems="10"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:inputType="text" />
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:layout_rowSpan="6"
+                android:id="@+id/MechHvacNoteSpace" />
+
+            <EditText
+                android:id="@+id/editMechHvacNote2"
+                android:layout_width="680dp"
+                android:layout_height="35dp"
+                android:textColor="@android:color/primary_text_light"
+                android:background="@drawable/edit_text_holo_light"
+                android:ems="10"
+                android:layout_row="1"
+                android:layout_column="1"
+                android:inputType="text" />
+        </GridLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mechElecLayout">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:columnOrderPreserved="false"
+            android:id="@+id/mechElecChckbxGrid">
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:layout_rowSpan="6"
+                android:id="@+id/mechElecChckbxGridSpace" />
+
+            <TextView
+                android:id="@+id/lblElecSyst"
+                android:text="@string/elecSys"
+                android:layout_width="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textIsSelectable="true"
+                android:layout_row="0"
+                android:layout_column="1" />
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_row="0"
+                android:layout_column="2"
+                android:id="@+id/mechChckbxGridSpace1"
+                android:layout_rowSpan="6" />
+
+            <TextView
+                android:id="@+id/lblPlumbSys"
+                android:text="@string/plumbSys"
+                android:layout_width="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textIsSelectable="true"
+                android:layout_row="0"
+                android:layout_column="3" />
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_row="0"
+                android:layout_column="4"
+                android:id="@+id/mechChckbxGridSpace2"
+                android:layout_rowSpan="8" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/mechElec_chkbx1"
+                android:layout_row="1"
+                android:layout_column="1"
+                android:checked="false"
+                android:text="@string/mechElec_chkbx1" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/mechElec_chkbx4"
+                android:layout_row="1"
+                android:layout_column="3"
+                android:checked="false"
+                android:text="@string/mechElec_chkbx4" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/mechElec_chkbx3"
+                android:layout_row="3"
+                android:layout_column="1"
+                android:checked="false"
+                android:text="@string/mechElec_chkbx3" />
+
+            <EditText
+                android:id="@+id/editMechElec_chkbx1"
+                android:layout_width="320dp"
+                android:layout_height="35dp"
+                android:textColor="@android:color/primary_text_light"
+                android:background="@drawable/edit_text_holo_light"
+                android:ems="10"
+                android:layout_row="1"
+                android:layout_column="5"
+                android:inputType="text" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/mechElec_chkbx2"
+                android:layout_row="2"
+                android:layout_column="1"
+                android:checked="false"
+                android:text="@string/mechElec_chkbx2" />
+
+            <TextView
+                android:id="@+id/lblMechElecNotes"
+                android:text="@string/otherNote"
+                android:layout_width="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textIsSelectable="true"
+                android:layout_row="0"
+                android:layout_column="5" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/mechElec_chkbx5"
+                android:layout_row="2"
+                android:layout_column="3"
+                android:checked="false"
+                android:text="@string/mechElec_chkbx5" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/mechElec_chkbx6"
+                android:layout_row="3"
+                android:layout_column="3"
+                android:checked="false"
+                android:text="@string/mechElec_chkbx3" />
+
+        </GridLayout>
+    </LinearLayout>
+</LinearLayout>

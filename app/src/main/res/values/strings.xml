@@ -1,0 +1,291 @@
+<resources>
+    <string name="app_name">NINA</string>
+    <string name="app_long_name">Normac Insurance Appraisal Field Form</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+
+    //Alphanumeric Restriction-------------------------------------
+    <string name="alphanumeric">
+        abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789
+    </string>
+    // ------------------------------------------------------------
+
+    //Used for general_report_layout.xml --------------------------
+    <string name="genReport">General Information</string>
+    <string name="file">File #</string>
+    <string name="strata">Strata #</string>
+    <string name="buildingName">Building Name</string>
+    <string name="stAdd">Street Address</string>
+    <string name="city">City</string>
+    <string name="province">Province</string>
+    <string name="inspectionDate">Inspection Date</string>
+    <string name="effectiveDate">Effective Date</string>
+    <string name="appraisalType">Appraisal Type</string>
+    <string name="inspectionBy">Inspection By</string>
+    <string name="reportBy">Report By</string>
+    <string name="assistedBy">Assisted By</string>
+    <string name="civ">CIV</string>
+    <string name="mv">MV</string>
+    <string name="siteContact">Site Contact</string>
+    <string name="siteContactName">Name</string>
+    <string name="siteContactPhone">Phone</string>
+    <string name="siteContactSB">Suite/Buzzer</string>
+    <string name="numberOf">Number of</string>
+    <string name="resiSuitesNo">Residential Suites</string>
+    <string name="commUnitsNo">Commercial Units</string>
+    <string name="buildingNo">Buildings</string>
+    <string name="constYear">Construction Year</string>
+    <string name="zoning">Zoning</string>
+    <string name="parking">Parking</string>
+    <string name="parkSurf">Surface</string>
+    <string name="parkUG">UG</string>
+    <string name="parkGRG">GRG</string>
+    <string name="parkCP">CP</string>
+
+    <string name="gen_hint1">YYYY-MM-DD</string>
+    <string name="gen_hint2">Enter City</string>
+    <string name="gen_hint3">Enter Province</string>
+    <string name="gen_hint4">Enter Name</string>
+    // ------------------------------------------------------------
+
+    //Used for landscape_layout.xml -------------------------------
+    <string name="landscape">Site Features</string>
+    <string name="siteArea">Site Area</string>
+    <string name="soft_percent">Soft %</string>
+    <string name="soft_quality">Soft Quality</string>
+    <string name="hard_percent">Hard %</string>
+    <string name="hard_quality">Hard Quality</string>
+    <string name="landscape_title">Landscape</string>
+
+    <string name="lndscp_chkbx1">grass</string>
+    <string name="lndscp_chkbx2">trees</string>
+    <string name="lndscp_chkbx3">shrubs</string>
+    <string name="lndscp_chkbx4">irrigation system</string>
+    <string name="lndscp_chkbx5">basketball court</string>
+    <string name="lndscp_chkbx6">benches</string>
+    <string name="lndscp_chkbx7">bike rack</string>
+    <string name="lndscp_chkbx8">curbing</string>
+    <string name="lndscp_chkbx9">entrance canopy</string>
+    <string name="lndscp_chkbx10">entrance gate</string>
+    <string name="lndscp_chkbx11">fencing</string>
+    <string name="lndscp_chkbx12">garbage shelter</string>
+    <string name="lndscp_chkbx13">gazebo</string>
+    <string name="lndscp_chkbx14">lighting</string>
+    <string name="lndscp_chkbx15">mail kiosk</string>
+    <string name="lndscp_chkbx16">metal poles</string>
+    <string name="lndscp_chkbx17">outdoor swim pool</string>
+    <string name="lndscp_chkbx18">patios</string>
+    <string name="lndscp_chkbx19">planters</string>
+    <string name="lndscp_chkbx20">playground</string>
+    <string name="lndscp_chkbx21">pedestrian gates</string>
+    <string name="lndscp_chkbx22">railing</string>
+    <string name="lndscp_chkbx23">retaining walls</string>
+    <string name="lndscp_chkbx24">roadways</string>
+    <string name="lndscp_chkbx25">signs</string>
+    <string name="lndscp_chkbx26">storage shed</string>
+    <string name="lndscp_chkbx27">surfacing parking</string>
+    <string name="lndscp_chkbx28">tennis court</string>
+    <string name="lndscp_chkbx29">walkways</string>
+    <string name="lndscp_chkbx30">water feature</string>
+    
+    <string name="lndscp_hint">Enter % Here</string>
+    <string name="lndscp_hint1">Input not needed</string>
+    // ------------------------------------------------------------
+
+    //Used for features_general_layout.xml ------------------------
+    <string name="structFeatGen">Structure(s)</string>
+    <string name="structFeat">General Construction</string>
+    <string name="buildingFrame">Building Frame</string>
+    <string name="propType">Property Type</string>
+    <string name="buildingType1">Building Type (use)</string>
+    <string name="buildingType2">Building Type(#)</string>
+    <string name="bcbcGroup">BCBC Group (primary)</string>
+    <string name="buildClass">Building Class</string>
+    <string name="floorNo"># of Floors</string>
+    <string name="propRights">Property Rights</string>
+    <string name="extra">Extra</string>
+
+    <string name="feat_chkbx1">amenity building</string>
+    <string name="feat_chkbx2">amenity room(s)</string>
+    <string name="feat_chkbx3">bike room</string>
+    <string name="feat_chkbx4">carports</string>
+    <string name="feat_chkbx5">change room(s)</string>
+    <string name="feat_chkbx6">common kitchen(s)</string>
+    <string name="feat_chkbx7">common washroom(s)</string>
+    <string name="feat_chkbx8">crawl space(s)</string>
+    <string name="feat_chkbx9">exercise room</string>
+    <string name="feat_chkbx10">garage(s); detached</string>
+    <string name="feat_chkbx11">garage(s); attached</string>
+    <string name="feat_chkbx12">gym</string>
+    <string name="feat_chkbx13">indoor hot tub</string>
+    <string name="feat_chkbx14">indoor swim pool</string>
+    <string name="feat_chkbx15">laundry room(s)</string>
+    <string name="feat_chkbx16">library</string>
+    <string name="feat_chkbx17">mechanical room(s)</string>
+    <string name="feat_chkbx18">meeting room</string>
+    <string name="feat_chkbx19">multi-purpose room</string>
+    <string name="feat_chkbx20">office</string>
+    <string name="feat_chkbx21">parkade; conc UG</string>
+    <string name="feat_chkbx22">parkade; ground-level</string>
+    <string name="feat_chkbx23">party room</string>
+    <string name="feat_chkbx24">reading room</string>
+    <string name="feat_chkbx25">roof garden</string>
+    <string name="feat_chkbx26">sauna</string>
+    <string name="feat_chkbx27">steam room(s)</string>
+    <string name="feat_chkbx28">storage</string>
+    <string name="feat_chkbx29">workshop</string>
+    <string name="feat_chkbx30">and var site improv</string>
+
+    <string name="feat_chkbx31">balconies</string>
+    <string name="feat_chkbx32">canopies</string>
+    <string name="feat_chkbx33">roof deck</string>
+    <string name="feat_chkbx34">roof overhang</string>
+    <string name="feat_chkbx35">skylights</string>
+    // ------------------------------------------------------------
+
+    //Used for features_structure_layout.xml ----------------------
+    <string name="excavations">Excavations</string>
+    <string name="foundations">Foundations</string>
+    <string name="extFrame">Exterior Frame</string>
+    <string name="intFrame">Interior Frame</string>
+    <string name="extclad">Exterior Cladding</string>
+    <string name="lowFl">Lowest Floor</string>
+    <string name="uppFl">Upper Floor(s)</string>
+    <string name="roofStr">Roof Structure</string>
+    <string name="roofMat">Roof Material</string>
+    <string name="primary">Primary</string>
+    <string name="additional">Additional</string>
+    // ------------------------------------------------------------
+
+
+    //Used for interior_cmn_build_layout.xml ----------------------
+    <string name="cmnBuild">Common Building Appliances</string>
+    <string name="intCmnApp_chkbx1">garbage compactor(s)</string>
+    <string name="intCmnApp_chkbx2">common washer(s)</string>
+    <string name="intCmnApp_chkbx3">common dryer(s)</string>
+
+    <string name="intCmnApp_hint1"># of units: n/a</string>
+    <string name="intCmnApp_hint2">ownership n/a</string>
+    // ------------------------------------------------------------
+
+    //Used for interior_finishes_*_layout.xml ---------------
+    <string name="finish">Interior Finishes</string>
+    <string name="ceiling">Ceiling</string>
+    <string name="walls">Walls</string>
+    <string name="floor">Floor</string>
+
+    <string name="parkade">Parkade</string>
+    <string name="commer">Commer</string>
+    <string name="basement">Basement</string>
+    <string name="lobby">Lobby</string>
+    <string name="halls">Halls</string>
+    <string name="suite">Suite(s)</string>
+    <string name="other">Other</string>
+    // ------------------------------------------------------------
+
+    //Used for interior_indv_suite_layout.xml ----------------------
+    <string name="intApp">Individual Suite Appliances</string>
+    <string name="intApp_chkbx1">dishwasher</string>
+    <string name="intApp_chkbx2">fridge</string>
+    <string name="intApp_chkbx3">garburator</string>
+    <string name="intApp_chkbx4">microwave (w/ hood)</string>
+    <string name="intApp_chkbx5">microwave (no hood)</string>
+    <string name="intApp_chkbx6">central vacuum</string>
+    <string name="intApp_chkbx7">stove (electric)</string>
+    <string name="intApp_chkbx8">stove (gas)</string>
+    <string name="intApp_chkbx9">stove top (electric)</string>
+    <string name="intApp_chkbx10">wall oven (electric)</string>
+    <string name="intApp_chkbx11">stove top (gas)</string>
+    <string name="intApp_chkbx12">wall oven (gas)</string>
+    <string name="intApp_chkbx13">dryer</string>
+    <string name="intApp_chkbx14">washer</string>
+    <string name="intApp_chkbx15">fireplaces</string>
+
+    <string name="intApp_lbl1">brand(s)</string>
+    <string name="intApp_lbl2">quality</string>
+    <string name="intApp_lbl3">style(s)</string>
+
+    <string name="intApp_hint">Quantity</string>
+    // ------------------------------------------------------------
+
+    //Used for mechanical_layout.xml ------------------------------
+    <string name="mech">Mechanical</string>
+    <string name="mechElev">Elevator</string>
+    <string name="mechHsys">HVAC Systems</string>
+
+    <string name="mechHvac_chkbx1">air conditioning</string>
+    <string name="mechHvac_chkbx2">ceiling fan(s)</string>
+    <string name="mechHvac_chkbx3">electric baseboard</string>
+    <string name="mechHvac_chkbx4">forced air</string>
+    <string name="mechHvac_chkbx5">geothermal</string>
+    <string name="mechHvac_chkbx6">heat pump(s)</string>
+    <string name="mechHvac_chkbx7">hot water baseboard</string>
+    <string name="mechHvac_chkbx8">hot water radiant</string>
+    <string name="mechHvac_chkbx9">hot water radiator</string>
+    <string name="mechHvac_chkbx10">rooftop HVAC unit(s)</string>
+    <string name="mechHvac_chkbx11">space heater(s)</string>
+    <string name="mechHvac_chkbx12">ventilation system</string>
+
+    <string name="elecSys">Electrical System</string>
+    <string name="plumbSys">Plumbing System</string>
+
+    <string name="mechElec_chkbx1">circuit breakers</string>
+    <string name="mechElec_chkbx2">fuse boxes</string>
+    <string name="mechElec_chkbx3">(estimate)</string>
+    <string name="mechElec_chkbx4">copper</string>
+    <string name="mechElec_chkbx5">PEX</string>
+
+    <string name="mechHint1"># of</string>
+    <string name="mechHint2">serving levels</string>
+    // ------------------------------------------------------------
+
+    //Used for safety_security_layout.xml -------------------------
+    <string name="secuSys">Security System(s)</string>
+    <string name="fireProt">Fire Protection</string>
+    <string name="sprSys">Sprinklers System</string>
+    <string name="standSys">Standpipe System</string>
+
+    <string name="secSys_chkbx1">pre-wired alarm</string>
+    <string name="secSys_chkbx2">key scan access</string>
+    <string name="secSys_chkbx3">parkade gate(s)</string>
+    <string name="secSys_chkbx4">enterphone system</string>
+    <string name="secSys_chkbx5">video surveillance</string>
+    <string name="secSys_chkbx6">intercom system</string>
+
+    <string name="secSysHint1">Enter # of gates</string>
+    <string name="secSysHint2">Enter # of cameras</string>
+    <string name="secSysHint3">backup: digi/tape</string>
+
+    <string name="firePro_chkbx1">smoke detects (wired)</string>
+    <string name="firePro_chkbx2">heat detects (wired)</string>
+    <string name="firePro_chkbx3">fire panel</string>
+    <string name="firePro_chkbx4">fire alarms</string>
+    <string name="firePro_chkbx5">pull stations</string>
+    <string name="firePro_chkbx6">fire extinguishers</string>
+    <string name="firePro_chkbx7">emergency lights</string>
+    <string name="firePro_chkbx8">generator</string>
+    <string name="firePro_chkbx9">smoke detects (batt)</string>
+    <string name="firePro_chkbx10">heat detects (batt)</string>
+    <string name="firePro_chkbx11">handicap access</string>
+    <string name="firePro_chkbx12">elevator ramp</string>
+
+    <string name="sprSys_radiobtn1">no sprinklers</string>
+    <string name="sprSys_radiobtn2">sprinklers throughout</string>
+    <string name="sprSys_radiobtn3">parkade/boiler only</string>
+    <string name="sprSys_radiobtn4">firewalls (THs)</string>
+
+    <string name="standSys_chkbx1">no standpipe</string>
+    <string name="standSys_chkbx2">stairwells</string>
+    <string name="standSys_chkbx3">wall cabinets</string>
+
+    // ------------------------------------------------------------
+
+    // Other-------------------------------------------------------
+    <string name="otherNote">Notes</string>
+    // ------------------------------------------------------------
+    // Used for images---------------------------------------------
+    <string name="btn_pick">Select images from gallery</string>
+    <string name="btn_ok">OK</string>
+    // ------------------------------------------------------------
+</resources>

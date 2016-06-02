@@ -1,0 +1,580 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/secSysMainLayout">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:background="#2d81c3"
+        android:text="Safety &amp; Security"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:textColor="#ffffff"
+        android:layout_height="wrap_content"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/secSysLayout">
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/lblListItem"
+        android:text="@string/secuSys"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:textColor="@android:color/black"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/secSysChckbxLayout">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:columnOrderPreserved="false"
+            android:id="@+id/secSysChckbxGrid">
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:layout_rowSpan="6"
+                android:id="@+id/secSysChckbxGridSpace" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/secSys_chkbx1"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:checked="false"
+                android:text="@string/secSys_chkbx1" />
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_row="0"
+                android:layout_column="2"
+                android:id="@+id/secSysChckbxGridSpace1"
+                android:layout_rowSpan="6" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/secSys_chkbx4"
+                android:layout_row="0"
+                android:layout_column="3"
+                android:checked="false"
+                android:text="@string/secSys_chkbx4" />
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_row="0"
+                android:layout_column="4"
+                android:id="@+id/secSysChckbxGridSpace2"
+                android:layout_rowSpan="8" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/secSys_chkbx6"
+                android:layout_row="0"
+                android:layout_column="5"
+                android:checked="false"
+                android:text="@string/secSys_chkbx6" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/secSys_chkbx2"
+                android:layout_row="1"
+                android:layout_column="1"
+                android:checked="false"
+                android:text="@string/secSys_chkbx2" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/secSys_chkbx5"
+                android:layout_row="1"
+                android:layout_column="3"
+                android:checked="false"
+                android:text="@string/secSys_chkbx5" />
+
+            <EditText
+                android:id="@+id/editSecSysNote_chkbx1"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:textColor="@android:color/primary_text_light"
+                android:background="@drawable/edit_text_holo_light"
+                android:ems="10"
+                android:layout_row="1"
+                android:layout_column="5"
+                android:inputType="text" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/secSys_chkbx3"
+                android:layout_row="2"
+                android:layout_column="1"
+                android:checked="false"
+                android:text="@string/secSys_chkbx3" />
+
+            <EditText
+                android:id="@+id/editSecSysCamNo_chkbx"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:textColor="@android:color/primary_text_light"
+                android:background="@drawable/edit_text_holo_light"
+                android:ems="10"
+                android:layout_row="2"
+                android:layout_column="3"
+                android:hint="@string/secSysHint2"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/editSecSysNote_chkbx2"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:textColor="@android:color/primary_text_light"
+                android:background="@drawable/edit_text_holo_light"
+                android:ems="10"
+                android:layout_row="2"
+                android:layout_column="5"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/editSecSysParkadeNo_chkbx"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:textColor="@android:color/primary_text_light"
+                android:background="@drawable/edit_text_holo_light"
+                android:ems="10"
+                android:layout_row="3"
+                android:layout_column="1"
+                android:hint="@string/secSysHint1"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/editSecSysCamBk_chkbx"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:textColor="@android:color/primary_text_light"
+                android:background="@drawable/edit_text_holo_light"
+                android:ems="10"
+                android:layout_row="3"
+                android:layout_column="3"
+                android:hint="@string/secSysHint3"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/editSecSysNote_chkbx3"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:textColor="@android:color/primary_text_light"
+                android:background="@drawable/edit_text_holo_light"
+                android:ems="10"
+                android:layout_row="3"
+                android:layout_column="5"
+                android:inputType="text" />
+
+        </GridLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/secSysNotesLayout" >
+
+        <TextView
+            android:id="@+id/lblSecSysNote"
+            android:text="@string/otherNote"
+            android:layout_width="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_height="wrap_content"
+            android:textSize="20sp" />
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:columnOrderPreserved="false"
+            android:id="@+id/secSysGridLayout" >
+
+            <EditText
+                android:id="@+id/editSecSysNote"
+                android:layout_width="680dp"
+                android:layout_height="35dp"
+                android:textColor="@android:color/primary_text_light"
+                android:background="@drawable/edit_text_holo_light"
+                android:ems="10"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:inputType="text" />
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:layout_rowSpan="6"
+                android:id="@+id/MechHvacNoteSpace" />
+
+            <EditText
+                android:id="@+id/editSecSysNote1"
+                android:layout_width="680dp"
+                android:layout_height="35dp"
+                android:textColor="@android:color/primary_text_light"
+                android:background="@drawable/edit_text_holo_light"
+                android:ems="10"
+                android:layout_row="1"
+                android:layout_column="1"
+                android:inputType="text" />
+        </GridLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/lblFirePro"
+        android:text="@string/fireProt"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:textColor="@android:color/black"
+        android:layout_height="wrap_content"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fireProChckbxGridLayout" >
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:columnOrderPreserved="false"
+            android:id="@+id/fireProChckbxGrid" >
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/firePro_chkbx1"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:checked="false"
+                android:text="@string/firePro_chkbx1" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/firePro_chkbx12"
+                android:layout_row="4"
+                android:layout_column="3"
+                android:checked="false"
+                android:text="@string/firePro_chkbx12" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/firePro_chkbx6"
+                android:layout_row="5"
+                android:layout_column="1"
+                android:checked="false"
+                android:text="@string/firePro_chkbx6" />
+
+            <TextView
+                android:id="@+id/lblSprinkSys"
+                android:text="@string/sprSys"
+                android:layout_width="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:layout_row="0"
+                android:layout_column="5" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/firePro_chkbx2"
+                android:layout_row="1"
+                android:layout_column="1"
+                android:checked="false"
+                android:text="@string/firePro_chkbx2" />
+
+            <EditText
+                android:id="@+id/editFirePro_chkbx"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:textColor="@android:color/primary_text_light"
+                android:background="@drawable/edit_text_holo_light"
+                android:ems="10"
+                android:layout_row="5"
+                android:layout_column="3"
+                android:inputType="text" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/standSys_chkbx1"
+                android:layout_row="8"
+                android:layout_column="5"
+                android:checked="false"
+                android:text="@string/standSys_chkbx2" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/standSys_chkbx2"
+                android:layout_row="9"
+                android:layout_column="5"
+                android:checked="false"
+                android:text="@string/standSys_chkbx3" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/firePro_chkbx7"
+                android:layout_row="6"
+                android:layout_column="1"
+                android:checked="false"
+                android:text="@string/firePro_chkbx7" />
+
+            <RadioGroup
+                android:layout_row="1"
+                android:layout_column="5"
+                android:layout_rowSpan="4">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sprSys_radiobtn1"
+                    android:id="@+id/sprSys_radiobtn"
+                    android:layout_row="1"
+                    android:layout_column="5"
+                    android:checked="false" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sprSys_radiobtn2"
+                    android:id="@+id/sprSys_radiobtn1"
+                    android:layout_row="2"
+                    android:layout_column="5"
+                    android:checked="false" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sprSys_radiobtn3"
+                    android:id="@+id/sprSys_radiobtn2"
+                    android:layout_row="3"
+                    android:layout_column="5"
+                    android:checked="false" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sprSys_radiobtn4"
+                    android:id="@+id/sprSys_radiobtn3"
+                    android:layout_row="4"
+                    android:layout_column="5"
+                    android:checked="false" />
+
+            </RadioGroup>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/firePro_chkbx3"
+                android:layout_row="2"
+                android:layout_column="1"
+                android:checked="false"
+                android:text="@string/firePro_chkbx3" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/firePro_chkbx10"
+                android:layout_row="1"
+                android:layout_column="3"
+                android:checked="false"
+                android:text="@string/firePro_chkbx10" />
+
+            <EditText
+                android:id="@+id/editFirePro_chkbx1"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:textColor="@android:color/primary_text_light"
+                android:background="@drawable/edit_text_holo_light"
+                android:ems="10"
+                android:layout_row="6"
+                android:layout_column="3"
+                android:inputType="text" />
+
+            <TextView
+                android:id="@+id/lblStandSys"
+                android:text="@string/standSys"
+                android:layout_width="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:layout_row="6"
+                android:layout_column="5" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/firePro_chkbx8"
+                android:layout_row="7"
+                android:layout_column="1"
+                android:checked="false"
+                android:text="@string/firePro_chkbx8" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/firePro_chkbx11"
+                android:layout_row="3"
+                android:layout_column="3"
+                android:checked="false"
+                android:text="@string/firePro_chkbx11" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/firePro_chkbx5"
+                android:layout_row="4"
+                android:layout_column="1"
+                android:checked="false"
+                android:text="@string/firePro_chkbx5" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/firePro_chkbx4"
+                android:layout_row="3"
+                android:layout_column="1"
+                android:checked="false"
+                android:text="@string/firePro_chkbx4" />
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:layout_rowSpan="8"
+                android:id="@+id/FireProChckbxGridSpace" />
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_row="0"
+                android:layout_column="2"
+                android:id="@+id/FireProChckbxGridSpace1"
+                android:layout_rowSpan="8" />
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_row="0"
+                android:layout_column="4"
+                android:id="@+id/FireProChckbxGridSpace2"
+                android:layout_rowSpan="8" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/firePro_chkbx9"
+                android:layout_row="0"
+                android:layout_column="3"
+                android:checked="false"
+                android:text="@string/firePro_chkbx9" />
+
+            <EditText
+                android:id="@+id/editFirePro_chkbx2"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:textColor="@android:color/primary_text_light"
+                android:background="@drawable/edit_text_holo_light"
+                android:ems="10"
+                android:layout_row="7"
+                android:layout_column="3"
+                android:inputType="text" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/standSys_chkbx"
+                android:layout_row="7"
+                android:layout_column="5"
+                android:checked="false"
+                android:text="@string/standSys_chkbx1" />
+
+        </GridLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fireProNotesLayout" >
+
+        <TextView
+            android:id="@+id/lblFireProNote"
+            android:text="@string/otherNote"
+            android:layout_width="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_height="wrap_content"
+            android:textSize="20sp" />
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:columnOrderPreserved="false"
+            android:id="@+id/fireProGridLayout" >
+
+            <EditText
+                android:id="@+id/editFireProNote"
+                android:layout_width="680dp"
+                android:layout_height="35dp"
+                android:textColor="@android:color/primary_text_light"
+                android:background="@drawable/edit_text_holo_light"
+                android:ems="10"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:inputType="text" />
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:layout_rowSpan="6"
+                android:id="@+id/fireProNoteSpace" />
+
+            <EditText
+                android:id="@+id/editFireProNote1"
+                android:layout_width="680dp"
+                android:layout_height="35dp"
+                android:textColor="@android:color/primary_text_light"
+                android:background="@drawable/edit_text_holo_light"
+                android:ems="10"
+                android:layout_row="1"
+                android:layout_column="1"
+                android:inputType="text" />
+        </GridLayout>
+    </LinearLayout>
+
+</LinearLayout>

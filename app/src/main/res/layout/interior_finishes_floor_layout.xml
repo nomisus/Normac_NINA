@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/intFinishFloorLayout">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/intFinishFloorChckbxLayout">
+
+        <TextView
+            android:id="@+id/lblFloor"
+            android:text="@string/floor"
+            android:layout_width="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textIsSelectable="true" />
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/intFinishFloorChckbxGrid">
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:layout_rowSpan="5"
+                android:id="@+id/intFinishFloorChckbxGridSpace" />
+
+            <TextView
+                android:id="@+id/lblFloorParkade"
+                android:text="@string/parkade"
+                android:layout_width="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textIsSelectable="true"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:layout_gravity="center_horizontal" />
+
+            <Spinner
+                android:id="@+id/spinnerIntFloorComm"
+                android:background="@drawable/spinner_background_holo_light"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:entries="@array/intFloor_array"
+                android:layout_row="1"
+                android:layout_column="2"
+                android:spinnerMode="dropdown" />
+
+            <Spinner
+                android:id="@+id/spinnerIntFloorBase"
+                android:background="@drawable/spinner_background_holo_light"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:entries="@array/intFloor_array"
+                android:layout_row="1"
+                android:layout_column="3"
+                android:spinnerMode="dropdown" />
+
+            <Spinner
+                android:id="@+id/spinnerIntFloorLobby"
+                android:background="@drawable/spinner_background_holo_light"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:entries="@array/intFloor_array"
+                android:layout_row="1"
+                android:layout_column="4"
+                android:spinnerMode="dropdown" />
+
+            <Spinner
+                android:id="@+id/spinnerIntFloorHall"
+                android:background="@drawable/spinner_background_holo_light"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:entries="@array/intFloor_array"
+                android:layout_row="1"
+                android:layout_column="5"
+                android:spinnerMode="dropdown" />
+
+            <Spinner
+                android:id="@+id/spinnerIntFloorSuite"
+                android:background="@drawable/spinner_background_holo_light"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:entries="@array/intFloor_array"
+                android:layout_row="1"
+                android:layout_column="6"
+                android:spinnerMode="dropdown" />
+
+            <Spinner
+                android:id="@+id/spinnerIntFloorOther"
+                android:background="@drawable/spinner_background_holo_light"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:entries="@array/intFloor_array"
+                android:layout_row="1"
+                android:layout_column="7"
+                android:spinnerMode="dropdown" />
+
+            <Spinner
+                android:id="@+id/spinnerIntFloorOther3"
+                android:background="@drawable/spinner_background_holo_light"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:entries="@array/intFloor_array"
+                android:layout_row="1"
+                android:layout_column="8"
+                android:spinnerMode="dropdown" />
+
+            <Spinner
+                android:id="@+id/spinnerIntFloorPark1"
+                android:background="@drawable/spinner_background_holo_light"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:entries="@array/intFloor_array"
+                android:layout_row="2"
+                android:layout_column="1"
+                android:spinnerMode="dropdown" />
+
+            <Spinner
+                android:id="@+id/spinnerIntFloorComm1"
+                android:background="@drawable/spinner_background_holo_light"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:entries="@array/intFloor_array"
+                android:layout_row="2"
+                android:layout_column="2"
+                android:spinnerMode="dropdown" />
+
+            <Spinner
+                android:id="@+id/spinnerIntFloorBase1"
+                android:background="@drawable/spinner_background_holo_light"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:entries="@array/intFloor_array"
+                android:layout_row="2"
+                android:layout_column="3"
+                android:spinnerMode="dropdown" />
+
+            <Spinner
+                android:id="@+id/spinnerIntFloorLobby1"
+                android:background="@drawable/spinner_background_holo_light"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:entries="@array/intFloor_array"
+                android:layout_row="2"
+                android:layout_column="4"
+                android:spinnerMode="dropdown" />
+
+            <Spinner
+                android:id="@+id/spinnerIntFloorHall1"
+                android:background="@drawable/spinner_background_holo_light"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:entries="@array/intFloor_array"
+                android:layout_row="2"
+                android:layout_column="5"
+                android:spinnerMode="dropdown" />
+
+            <Spinner
+                android:id="@+id/spinnerIntFloorSuite1"
+                android:background="@drawable/spinner_background_holo_light"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:entries="@array/intFloor_array"
+                android:layout_row="2"
+                android:layout_column="6"
+                android:spinnerMode="dropdown" />
+
+            <Spinner
+                android:id="@+id/spinnerIntFloorOther1"
+                android:background="@drawable/spinner_background_holo_light"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:entries="@array/intFloor_array"
+                android:layout_row="2"
+                android:layout_column="7"
+                android:spinnerMode="dropdown" />
+
+            <Spinner
+                android:id="@+id/spinnerIntFloorOther4"
+                android:background="@drawable/spinner_background_holo_light"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:entries="@array/intFloor_array"
+                android:layout_row="2"
+                android:layout_column="8"
+                android:spinnerMode="dropdown" />
+
+            <Spinner
+                android:id="@+id/spinnerIntFloorPark2"
+                android:background="@drawable/spinner_background_holo_light"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:entries="@array/intFloor_array"
+                android:layout_row="3"
+                android:layout_column="1"
+                android:spinnerMode="dropdown" />
+
+            <Spinner
+                android:id="@+id/spinnerIntFloorComm2"
+                android:background="@drawable/spinner_background_holo_light"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:entries="@array/intFloor_array"
+                android:layout_row="3"
+                android:layout_column="2"
+                android:spinnerMode="dropdown" />
+
+            <Spinner
+                android:id="@+id/spinnerIntFloorBase2"
+                android:background="@drawable/spinner_background_holo_light"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:entries="@array/intFloor_array"
+                android:layout_row="3"
+                android:layout_column="3"
+                android:spinnerMode="dropdown" />
+
+            <Spinner
+                android:id="@+id/spinnerIntFloorLobby2"
+                android:background="@drawable/spinner_background_holo_light"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:entries="@array/intFloor_array"
+                android:layout_row="3"
+                android:layout_column="4"
+                android:spinnerMode="dropdown" />
+
+            <Spinner
+                android:id="@+id/spinnerIntFloorHall2"
+                android:background="@drawable/spinner_background_holo_light"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:entries="@array/intFloor_array"
+                android:layout_row="3"
+                android:layout_column="5"
+                android:spinnerMode="dropdown" />
+
+            <Spinner
+                android:id="@+id/spinnerIntFloorSuite2"
+                android:background="@drawable/spinner_background_holo_light"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:entries="@array/intFloor_array"
+                android:layout_row="3"
+                android:layout_column="6"
+                android:spinnerMode="dropdown" />
+
+            <Spinner
+                android:id="@+id/spinnerIntFloorOther2"
+                android:background="@drawable/spinner_background_holo_light"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:entries="@array/intFloor_array"
+                android:layout_row="3"
+                android:layout_column="7"
+                android:spinnerMode="dropdown" />
+
+            <TextView
+                android:id="@+id/lblFloorCommer"
+                android:text="@string/commer"
+                android:layout_width="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textIsSelectable="true"
+                android:layout_row="0"
+                android:layout_column="2"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:id="@+id/lblFloorBasement"
+                android:text="@string/basement"
+                android:layout_width="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textIsSelectable="true"
+                android:layout_row="0"
+                android:layout_column="3"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:id="@+id/lblFloorLobby"
+                android:text="@string/lobby"
+                android:layout_width="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textIsSelectable="true"
+                android:layout_row="0"
+                android:layout_column="4"
+                android:layout_gravity="center_horizontal" />
+
+            <Spinner
+                android:id="@+id/spinnerIntFloorPark"
+                android:background="@drawable/spinner_background_holo_light"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:entries="@array/intFloor_array"
+                android:layout_row="1"
+                android:layout_column="1"
+                android:spinnerMode="dropdown" />
+
+            <Spinner
+                android:id="@+id/spinnerIntFloorOther5"
+                android:background="@drawable/spinner_background_holo_light"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:entries="@array/intFloor_array"
+                android:layout_row="3"
+                android:layout_column="8"
+                android:spinnerMode="dropdown" />
+
+            <TextView
+                android:id="@+id/lblFloorHalls"
+                android:text="@string/halls"
+                android:layout_width="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textIsSelectable="true"
+                android:layout_row="0"
+                android:layout_column="5"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:id="@+id/lblFloorSuite"
+                android:text="@string/suite"
+                android:layout_width="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textIsSelectable="true"
+                android:layout_row="0"
+                android:layout_column="6"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:id="@+id/lblFloorOther"
+                android:text="@string/other"
+                android:layout_width="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textIsSelectable="true"
+                android:layout_row="0"
+                android:layout_column="7"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:id="@+id/lblFloorOther1"
+                android:text="@string/other"
+                android:layout_width="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textIsSelectable="true"
+                android:layout_row="0"
+                android:layout_column="8"
+                android:layout_gravity="center_horizontal" />
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_row="0"
+                android:layout_column="9"
+                android:id="@+id/space9" />
+
+        </GridLayout>
+    </LinearLayout>
+</LinearLayout>

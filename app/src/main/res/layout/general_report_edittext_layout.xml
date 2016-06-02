@@ -1,0 +1,914 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/generalReportMainLayout">
+
+    <TextView
+        android:id="@+id/lblListItem"
+        android:background="#2d81c3"
+        android:text="@string/genReport"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:textColor="#ffffff"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/reportInfoLayout">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/reportInfoGrid">
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:id="@+id/reportInfoGridSpace" />
+
+            <TextView
+                android:id="@+id/lblFile"
+                android:text="@string/file"
+                android:layout_width="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textIsSelectable="true"
+                android:layout_row="0"
+                android:layout_column="1" />
+
+            <EditText
+                android:id="@+id/editFile"
+                android:digits="@string/alphanumeric"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/primary_text_light"
+                android:background="@drawable/edit_text_holo_light"
+                android:ems="10"
+                android:layout_row="0"
+                android:layout_column="2"
+                android:inputType="text" />
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_row="1"
+                android:layout_column="3"
+                android:id="@+id/reportInfoGridSpace1" />
+
+            <TextView
+                android:id="@+id/lblBuildingName"
+                android:text="@string/buildingName"
+                android:layout_width="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textIsSelectable="true"
+                android:layout_row="1"
+                android:layout_column="1" />
+
+            <EditText
+                android:id="@+id/editBuildingName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/primary_text_light"
+                android:background="@drawable/edit_text_holo_light"
+                android:ems="10"
+                android:layout_row="1"
+                android:layout_column="2"
+                android:inputType="text" />
+
+            <TextView
+                android:id="@+id/lblStrata"
+                android:text="@string/strata"
+
+                android:layout_width="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textIsSelectable="true"
+                android:layout_row="1"
+                android:layout_column="4" />
+
+            <EditText
+                android:id="@+id/editStrata"
+                android:digits="@string/alphanumeric"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/primary_text_light"
+                android:background="@drawable/edit_text_holo_light"
+                android:ems="10"
+                android:layout_row="1"
+                android:layout_column="5"
+                android:inputType="text" />
+
+            <TextView
+                android:id="@+id/lblStAdd"
+                android:text="@string/stAdd"
+                android:layout_width="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textIsSelectable="true"
+                android:layout_row="2"
+                android:layout_column="1" />
+
+            <EditText
+                android:id="@+id/editStAdd"
+                android:layout_width="524dp"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/primary_text_light"
+                android:background="@drawable/edit_text_holo_light"
+                android:ems="10"
+                android:layout_row="2"
+                android:layout_column="2"
+                android:layout_columnSpan="4"
+                android:inputType="text" />
+
+            <TextView
+                android:id="@+id/lblCity"
+                android:text="@string/city"
+                android:layout_width="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textIsSelectable="true"
+                android:layout_row="3"
+                android:layout_column="1" />
+
+            <Spinner
+                android:id="@+id/spinnerCity"
+                android:background="@drawable/spinner_background_holo_light"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:entries="@array/city_array"
+                android:layout_row="3"
+                android:layout_column="2"
+                android:spinnerMode="dropdown"/>
+
+            <EditText
+                android:id="@+id/editCity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/primary_text_light"
+                android:background="@drawable/edit_text_holo_light"
+                android:ems="10"
+                android:layout_row="4"
+                android:layout_column="2"
+                android:textAlignment="center"
+                android:inputType="text"
+                android:hint="@string/gen_hint2" />
+
+            <TextView
+                android:id="@+id/lblProvince"
+                android:text="@string/province"
+                android:layout_width="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textIsSelectable="true"
+                android:layout_row="3"
+                android:layout_column="4" />
+
+            <Spinner
+                android:id="@+id/spinnerProvince"
+                android:background="@drawable/spinner_background_holo_light"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:entries="@array/province_array"
+                android:layout_row="3"
+                android:layout_column="5"
+                android:spinnerMode="dropdown"/>
+
+            <EditText
+                android:id="@+id/editProvince"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/primary_text_light"
+                android:background="@drawable/edit_text_holo_light"
+                android:ems="10"
+                android:layout_row="4"
+                android:layout_column="5"
+                android:textAlignment="center"
+                android:inputType="text"
+                android:hint="@string/gen_hint3" />
+        </GridLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/reportInfoLayout1">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:columnOrderPreserved="false"
+            android:id="@+id/reportInfoGrid1">
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:id="@+id/reportInfoGridSpace2" />
+
+            <TextView
+                android:id="@+id/lblInspectionDate"
+                android:text="@string/inspectionDate"
+                android:layout_width="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textIsSelectable="true"
+                android:layout_row="0"
+                android:layout_column="1" />
+
+            <EditText
+                android:id="@+id/editInspectionDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/primary_text_light"
+                android:background="@drawable/edit_text_holo_light"
+                android:ems="10"
+                android:layout_row="0"
+                android:layout_column="2"
+                android:hint="@string/gen_hint1"
+                android:maxLength="10"
+                android:textAlignment="center"
+                android:inputType="text" />
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_row="1"
+                android:layout_column="3"
+                android:id="@+id/reportInfoGridSpace3" />
+
+            <TextView
+                android:id="@+id/lblEffectiveDate"
+                android:text="@string/effectiveDate"
+                android:layout_width="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textIsSelectable="true"
+                android:layout_row="0"
+                android:layout_column="4" />
+
+            <EditText
+                android:id="@+id/editEffectiveDate"
+                android:inputType="text|date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/primary_text_light"
+                android:background="@drawable/edit_text_holo_light"
+                android:ems="10"
+                android:maxLength="10"
+                android:layout_row="0"
+                android:layout_column="5"
+                android:hint="@string/gen_hint1"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/lblAppraisalType"
+                android:text="@string/appraisalType"
+                android:layout_width="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textIsSelectable="true"
+                android:layout_row="1"
+                android:layout_column="1" />
+
+            <Spinner
+                android:id="@+id/spinnerAppraisalType"
+                android:background="@drawable/spinner_background_holo_light"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:entries="@array/appraisalType_array"
+                android:layout_row="1"
+                android:layout_column="2"
+                android:spinnerMode="dropdown"/>
+
+            <TextView
+                android:id="@+id/lblReportBy"
+                android:text="@string/reportBy"
+                android:layout_width="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textIsSelectable="true"
+                android:layout_row="1"
+                android:layout_column="4" />
+
+            <Spinner
+                android:id="@+id/spinnerReportBy"
+                android:background="@drawable/spinner_background_holo_light"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:entries="@array/empList_array"
+                android:layout_row="1"
+                android:layout_column="5"
+                android:spinnerMode="dropdown"/>
+
+            <EditText
+                android:id="@+id/editAppraisalType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/primary_text_light"
+                android:background="@drawable/edit_text_holo_light"
+                android:ems="10"
+                android:layout_row="2"
+                android:layout_column="2"
+                android:textAlignment="center"
+                android:inputType="text"
+                android:hint="@string/gen_hint4" />
+
+            <EditText
+                android:id="@+id/editReportBy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/primary_text_light"
+                android:background="@drawable/edit_text_holo_light"
+                android:ems="10"
+                android:layout_row="2"
+                android:layout_column="5"
+                android:textAlignment="center"
+                android:inputType="text"
+                android:hint="@string/gen_hint4" />
+
+            <TextView
+                android:id="@+id/lblInspectionBy"
+                android:text="@string/inspectionBy"
+                android:layout_width="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textIsSelectable="true"
+                android:layout_row="3"
+                android:layout_column="1" />
+
+            <Spinner
+                android:id="@+id/spinnerInspectionBy"
+                android:background="@drawable/spinner_background_holo_light"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:entries="@array/empList_array"
+                android:layout_row="3"
+                android:layout_column="2"
+                android:spinnerMode="dropdown"/>
+
+            <EditText
+                android:id="@+id/editInspectionBy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/primary_text_light"
+                android:background="@drawable/edit_text_holo_light"
+                android:ems="10"
+                android:layout_row="4"
+                android:layout_column="2"
+                android:textAlignment="center"
+                android:inputType="text"
+                android:hint="@string/gen_hint4" />
+
+            <TextView
+                android:id="@+id/lblAssistedBy"
+                android:text="@string/assistedBy"
+                android:layout_width="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textIsSelectable="true"
+                android:layout_row="3"
+                android:layout_column="4" />
+
+            <Spinner
+                android:id="@+id/spinnerAssistedBy"
+                android:background="@drawable/spinner_background_holo_light"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:entries="@array/empList_array"
+                android:layout_row="3"
+                android:layout_column="5"
+                android:spinnerMode="dropdown"/>
+
+            <EditText
+                android:id="@+id/editAssistedBy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/primary_text_light"
+                android:background="@drawable/edit_text_holo_light"
+                android:ems="10"
+                android:layout_row="4"
+                android:layout_column="5"
+                android:textAlignment="center"
+                android:inputType="text"
+                android:hint="@string/gen_hint4" />
+
+            <TextView
+                android:id="@+id/lblCIV"
+                android:text="@string/civ"
+                android:layout_width="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textIsSelectable="true"
+                android:layout_row="5"
+                android:layout_column="1" />
+
+            <EditText
+                android:id="@+id/editCIV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/primary_text_light"
+                android:background="@drawable/edit_text_holo_light"
+                android:ems="10"
+                android:layout_row="5"
+                android:layout_column="2"
+                android:inputType="text" />
+
+            <TextView
+                android:id="@+id/lblMV"
+                android:text="@string/mv"
+                android:layout_width="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textIsSelectable="true"
+                android:layout_row="5"
+                android:layout_column="4" />
+
+            <EditText
+                android:id="@+id/editMV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/primary_text_light"
+                android:background="@drawable/edit_text_holo_light"
+                android:ems="10"
+                android:layout_row="5"
+                android:layout_column="5"
+                android:inputType="text" />
+        </GridLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/reportInfoLayout2">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:columnOrderPreserved="false"
+            android:id="@+id/reportInfoGrid2">
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:id="@+id/reportInfoGridSpace4" />
+
+            <TextView
+                android:id="@+id/lblSiteContact"
+                android:text="@string/siteContact"
+                android:layout_width="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textIsSelectable="true"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:layout_columnSpan="2" />
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_row="1"
+                android:layout_column="1"
+                android:id="@+id/reportInfoGridSpace5" />
+
+            <TextView
+                android:id="@+id/lblSiteContactName"
+                android:text="@string/siteContactName"
+                android:layout_width="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textIsSelectable="true"
+                android:layout_row="1"
+                android:layout_column="2" />
+
+            <EditText
+                android:id="@+id/editSiteContactName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/primary_text_light"
+                android:background="@drawable/edit_text_holo_light"
+                android:ems="10"
+                android:layout_row="1"
+                android:layout_column="3"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/lblSiteContactPhone"
+                android:text="@string/siteContactPhone"
+                android:layout_width="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textIsSelectable="true"
+                android:layout_row="2"
+                android:layout_column="2" />
+
+            <EditText
+                android:id="@+id/editSiteContactPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/primary_text_light"
+                android:background="@drawable/edit_text_holo_light"
+                android:ems="10"
+                android:layout_row="2"
+                android:layout_column="3"
+                android:inputType="phone" />
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_row="1"
+                android:layout_column="4"
+                android:id="@+id/reportInfoGridSpace6" />
+
+            <TextView
+                android:id="@+id/lblSiteContactSB"
+                android:text="@string/siteContactSB"
+                android:layout_width="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textIsSelectable="true"
+                android:layout_row="2"
+                android:layout_column="5" />
+
+            <EditText
+                android:id="@+id/editSiteContactSB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/primary_text_light"
+                android:background="@drawable/edit_text_holo_light"
+                android:ems="10"
+                android:layout_row="2"
+                android:layout_column="6"
+                android:inputType="text" />
+
+        </GridLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/reportInfoLayout3">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:columnOrderPreserved="false"
+            android:id="@+id/reportInfoGrid3">
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:id="@+id/reportInfoGridSpace7" />
+
+            <TextView
+                android:id="@+id/lblNumberOf"
+                android:text="@string/numberOf"
+                android:layout_width="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textIsSelectable="true"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:layout_columnSpan="2" />
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_row="1"
+                android:layout_column="1"
+                android:id="@+id/reportInfoGridSpace8" />
+
+            <TextView
+                android:id="@+id/lblResiSuitesNo"
+                android:text="@string/resiSuitesNo"
+                android:layout_width="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textIsSelectable="true"
+                android:layout_row="1"
+                android:layout_column="2" />
+
+            <EditText
+                android:id="@+id/editResiSuitesNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/primary_text_light"
+                android:background="@drawable/edit_text_holo_light"
+                android:ems="10"
+                android:layout_row="1"
+                android:layout_column="3"
+                android:inputType="number" />
+
+            <TextView
+                android:id="@+id/lblCommUnitsNo"
+                android:text="@string/commUnitsNo"
+                android:layout_width="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textIsSelectable="true"
+                android:layout_row="2"
+                android:layout_column="2" />
+
+            <EditText
+                android:id="@+id/editCommUnitsNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/primary_text_light"
+                android:background="@drawable/edit_text_holo_light"
+                android:ems="10"
+                android:layout_row="2"
+                android:layout_column="3"
+                android:inputType="number" />
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_row="1"
+                android:layout_column="4"
+                android:id="@+id/reportInfoGridSpace9" />
+
+            <TextView
+                android:id="@+id/lblBuildingNo"
+                android:text="@string/buildingNo"
+                android:layout_width="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textIsSelectable="true"
+                android:layout_row="2"
+                android:layout_column="5" />
+
+            <EditText
+                android:id="@+id/editBuildingNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/primary_text_light"
+                android:background="@drawable/edit_text_holo_light"
+                android:ems="10"
+                android:layout_row="2"
+                android:layout_column="6"
+                android:inputType="number" />
+
+        </GridLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/reportInfoLayout4">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:columnOrderPreserved="false"
+            android:id="@+id/reportInfoGrid4">
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:id="@+id/reportInfoGridSpace10" />
+
+            <TextView
+                android:id="@+id/lblConstYear"
+                android:text="@string/constYear"
+                android:layout_width="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textIsSelectable="true"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:layout_columnSpan="2" />
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_row="2"
+                android:layout_column="3"
+                android:id="@+id/reportInfoGridSpace11" />
+
+            <EditText
+                android:id="@+id/editConstYear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/primary_text_light"
+                android:background="@drawable/edit_text_holo_light"
+                android:ems="10"
+                android:layout_row="0"
+                android:layout_column="3"
+                android:inputType="date" />
+
+            <TextView
+                android:id="@+id/lblZoning"
+                android:text="@string/zoning"
+                android:layout_width="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textIsSelectable="true"
+                android:layout_row="0"
+                android:layout_column="4" />
+
+            <EditText
+                android:id="@+id/editZoning"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/primary_text_light"
+                android:background="@drawable/edit_text_holo_light"
+                android:ems="10"
+                android:layout_row="0"
+                android:layout_column="5"
+                android:inputType="text" />
+
+        </GridLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/reportInfoLayout5" >
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:columnOrderPreserved="false"
+            android:id="@+id/reportInfoGrid5" >
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:id="@+id/reportInfoGridSpace12" />
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_row="0"
+                android:layout_column="3"
+                android:id="@+id/reportInfoGridSpace13" />
+
+            <TextView
+                android:id="@+id/lblParking"
+                android:text="@string/parking"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textIsSelectable="true"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:layout_columnSpan="2" />
+
+            <TextView
+                android:id="@+id/lblParkSurf"
+                android:text="@string/parkSurf"
+                android:layout_width="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textIsSelectable="true"
+                android:layout_row="0"
+                android:layout_column="4" />
+
+            <EditText
+                android:id="@+id/editParkSurf"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/primary_text_light"
+                android:background="@drawable/edit_text_holo_light"
+                android:ems="10"
+                android:layout_row="0"
+                android:layout_column="5"
+                android:inputType="text" />
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_row="0"
+                android:layout_column="6"
+                android:id="@+id/reportInfoGridSpace14" />
+
+            <TextView
+                android:id="@+id/lblParkUG"
+                android:text="@string/parkUG"
+                android:layout_width="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textIsSelectable="true"
+                android:layout_row="0"
+                android:layout_column="7" />
+
+            <EditText
+                android:id="@+id/editParkUG"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/primary_text_light"
+                android:background="@drawable/edit_text_holo_light"
+                android:ems="10"
+                android:layout_row="0"
+                android:layout_column="8"
+                android:inputType="text" />
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_row="0"
+                android:layout_column="9"
+                android:id="@+id/reportInfoGridSpace15" />
+
+            <TextView
+                android:id="@+id/lblParkGRG"
+                android:text="@string/parkGRG"
+                android:layout_width="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textIsSelectable="true"
+                android:layout_row="0"
+                android:layout_column="10" />
+
+            <EditText
+                android:id="@+id/editParkGRG"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/primary_text_light"
+                android:background="@drawable/edit_text_holo_light"
+                android:ems="10"
+                android:layout_row="0"
+                android:layout_column="11"
+                android:inputType="text" />
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_row="0"
+                android:layout_column="12"
+                android:id="@+id/reportInfoGridSpace16" />
+
+            <TextView
+                android:id="@+id/lblParkCP"
+                android:text="@string/parkCP"
+                android:layout_width="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textIsSelectable="true"
+                android:layout_row="0"
+                android:layout_column="13" />
+
+            <EditText
+                android:id="@+id/editParkCP"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/primary_text_light"
+                android:background="@drawable/edit_text_holo_light"
+                android:ems="10"
+                android:layout_row="0"
+                android:layout_column="14"
+                android:inputType="text" />
+        </GridLayout>
+    </LinearLayout>
+</LinearLayout>
+

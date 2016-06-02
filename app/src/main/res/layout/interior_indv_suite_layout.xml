@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/lblListItem"
+        android:text="@string/intApp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:textColor="@android:color/black"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/intAppChckbxLayout">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:columnOrderPreserved="false"
+            android:id="@+id/intAppChckbxGrid">
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:layout_rowSpan="6"
+                android:id="@+id/intAppChckbxGridSpace" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/intApp_chkbx1"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:checked="false"
+                android:text="@string/intApp_chkbx1" />
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_row="0"
+                android:layout_column="2"
+                android:id="@+id/intAppChckbxGridSpace1"
+                android:layout_rowSpan="6" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/intApp_chkbx7"
+                android:layout_row="0"
+                android:layout_column="3"
+                android:checked="false"
+                android:text="@string/intApp_chkbx7" />
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_row="0"
+                android:layout_column="4"
+                android:id="@+id/intAppChckbxGridSpace2"
+                android:layout_rowSpan="8" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/intApp_chkbx13"
+                android:layout_row="0"
+                android:layout_column="5"
+                android:checked="false"
+                android:text="@string/intApp_chkbx13" />
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_row="0"
+                android:layout_column="6"
+                android:id="@+id/intAppChckbxGridSpace3"
+                android:layout_rowSpan="6" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/intApp_chkbx2"
+                android:layout_row="1"
+                android:layout_column="1"
+                android:checked="false"
+                android:text="@string/intApp_chkbx2" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/intApp_chkbx8"
+                android:layout_row="1"
+                android:layout_column="3"
+                android:checked="false"
+                android:text="@string/intApp_chkbx8" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/intApp_chkbx14"
+                android:layout_row="1"
+                android:layout_column="5"
+                android:checked="false"
+                android:text="@string/intApp_chkbx14" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/intApp_chkbx3"
+                android:layout_row="2"
+                android:layout_column="1"
+                android:checked="false"
+                android:text="@string/intApp_chkbx3" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/intApp_chkbx9"
+                android:layout_row="2"
+                android:layout_column="3"
+                android:checked="false"
+                android:text="@string/intApp_chkbx9" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/intApp_chkbx15"
+                android:layout_row="2"
+                android:layout_column="5"
+                android:checked="false"
+                android:text="@string/intApp_chkbx15" />
+
+            <EditText
+                android:id="@+id/editIntApp_chkbx1"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/primary_text_light"
+                android:background="@drawable/edit_text_holo_light"
+                android:ems="10"
+                android:layout_row="2"
+                android:layout_column="7"
+                android:inputType="text"
+                android:hint="@string/intApp_hint"
+                android:textAlignment="center" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/intApp_chkbx4"
+                android:layout_row="3"
+                android:layout_column="1"
+                android:checked="false"
+                android:text="@string/intApp_chkbx4" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/intApp_chkbx10"
+                android:layout_row="3"
+                android:layout_column="3"
+                android:checked="false"
+                android:text="@string/intApp_chkbx10" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/intApp_chkbx5"
+                android:layout_row="4"
+                android:layout_column="1"
+                android:checked="false"
+                android:text="@string/intApp_chkbx5" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/intApp_chkbx11"
+                android:layout_row="4"
+                android:layout_column="3"
+                android:checked="false"
+                android:text="@string/intApp_chkbx11" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/intApp_chkbx6"
+                android:layout_row="5"
+                android:layout_column="1"
+                android:checked="false"
+                android:text="@string/intApp_chkbx6" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/intApp_chkbx12"
+                android:layout_row="5"
+                android:layout_column="3"
+                android:checked="false"
+                android:text="@string/intApp_chkbx12" />
+
+            <Spinner
+                android:id="@+id/spinnerIntIndvFireplace"
+                android:background="@drawable/spinner_background_holo_light"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:entries="@array/intAppFireplace_array"
+                android:layout_row="3"
+                android:layout_column="7"
+                android:spinnerMode="dropdown" />
+
+        </GridLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/intIndvNoteLayout">
+
+        <TextView
+            android:id="@+id/lblIntIndvNote"
+            android:text="@string/otherNote"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            />
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:columnOrderPreserved="false"
+            android:id="@+id/intIndvNoteGrid">
+
+            <Space
+                android:layout_width="40dp"
+                android:layout_height="20dp"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:layout_rowSpan="6"
+                android:id="@+id/intIndvNoteSpace" />
+
+            <EditText
+                android:id="@+id/editIntIndvNote"
+                android:layout_width="680dp"
+                android:layout_height="35dp"
+                android:textColor="@android:color/primary_text_light"
+                android:background="@drawable/edit_text_holo_light"
+                android:ems="10"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/editIntIndvNote1"
+                android:layout_width="680dp"
+                android:layout_height="35dp"
+                android:textColor="@android:color/primary_text_light"
+                android:background="@drawable/edit_text_holo_light"
+                android:ems="10"
+                android:layout_row="1"
+                android:layout_column="1"
+                android:inputType="text" />
+
+        </GridLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/intAppNoteLayout">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:columnOrderPreserved="false"
+            android:id="@+id/intAppNoteGrid">
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:layout_rowSpan="3"
+                android:id="@+id/intAppNoteGridSpace" />
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_row="0"
+                android:layout_column="3"
+                android:id="@+id/intAppNoteGridSpace1"
+                android:layout_rowSpan="3" />
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_row="0"
+                android:layout_column="4"
+                android:id="@+id/intAppNoteGridSpace2"
+                android:layout_rowSpan="4" />
+
+            <TextView
+                android:id="@+id/lblintApp"
+                android:text="@string/intApp_lbl1"
+                android:layout_width="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textIsSelectable="true"
+                android:layout_row="1"
+                android:layout_column="1" />
+
+            <Spinner
+                android:id="@+id/spinnerIntAppBrand"
+                android:background="@drawable/spinner_background_holo_light"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:entries="@array/intAppBrand_array"
+                android:layout_row="1"
+                android:layout_column="2"
+                android:spinnerMode="dropdown" />
+
+            <Spinner
+                android:id="@+id/spinnerIntAppQuality"
+                android:background="@drawable/spinner_background_holo_light"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:entries="@array/intAppQuality_array"
+                android:layout_row="2"
+                android:layout_column="2"
+                android:spinnerMode="dropdown" />
+
+            <Spinner
+                android:id="@+id/spinnerIntAppStyle"
+                android:background="@drawable/spinner_background_holo_light"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:entries="@array/intAppStyle_array"
+                android:layout_row="3"
+                android:layout_column="2"
+                android:spinnerMode="dropdown" />
+
+            <Spinner
+                android:id="@+id/spinnerIntAppBrand2"
+                android:background="@drawable/spinner_background_holo_light"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:entries="@array/intAppBrand_array"
+                android:layout_row="1"
+                android:layout_column="5"
+                android:spinnerMode="dropdown" />
+
+            <Spinner
+                android:id="@+id/spinnerIntAppQuality2"
+                android:background="@drawable/spinner_background_holo_light"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:entries="@array/intAppQuality_array"
+                android:layout_row="2"
+                android:layout_column="5"
+                android:spinnerMode="dropdown" />
+
+            <Spinner
+                android:id="@+id/spinnerIntAppStyle2"
+                android:background="@drawable/spinner_background_holo_light"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:entries="@array/intAppStyle_array"
+                android:layout_row="3"
+                android:layout_column="5"
+                android:spinnerMode="dropdown" />
+
+            <TextView
+                android:id="@+id/lblintApp1"
+                android:text="@string/intApp_lbl1"
+                android:layout_width="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textIsSelectable="true"
+                android:layout_row="1"
+                android:layout_column="4" />
+
+            <TextView
+                android:id="@+id/lblintApp2"
+                android:text="@string/intApp_lbl2"
+                android:layout_width="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textIsSelectable="true"
+                android:layout_row="2"
+                android:layout_column="1" />
+
+            <TextView
+                android:id="@+id/lblintApp3"
+                android:text="@string/intApp_lbl2"
+                android:layout_width="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textIsSelectable="true"
+                android:layout_row="2"
+                android:layout_column="4" />
+
+            <TextView
+                android:id="@+id/lblintApp4"
+                android:text="@string/intApp_lbl3"
+                android:layout_width="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textIsSelectable="true"
+                android:layout_row="3"
+                android:layout_column="1" />
+
+            <TextView
+                android:id="@+id/lblintApp5"
+                android:text="@string/intApp_lbl3"
+                android:layout_width="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textIsSelectable="true"
+                android:layout_row="3"
+                android:layout_column="4" />
+
+        </GridLayout>
+    </LinearLayout>
+
+</LinearLayout>

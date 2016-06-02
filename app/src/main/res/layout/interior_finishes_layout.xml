@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/intFinishCeilingLayout">
+
+    <TextView
+        android:id="@+id/lblListItem"
+        android:background="@color/colorAccent"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:textColor="@android:color/black"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        />
+
+    <include layout="@layout/interior_finishes_ceiling_layout"></include>
+
+    <Space
+        android:id="@+id/space"
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+
+    <include layout="@layout/interior_finishes_walls_layout"></include>
+
+    <Space
+        android:id="@+id/space1"
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+
+    <include layout="@layout/interior_finishes_floor_layout"></include>
+</LinearLayout>

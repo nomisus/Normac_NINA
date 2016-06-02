@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:title="Options">
+        <menu>
+            <item
+                android:id="@+id/nav_save"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Save on device as excel" />
+
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_gallery"
+                android:title="Open new report" />
+
+            <item
+                android:id="@+id/nav_clear"
+                android:icon="@drawable/ic_menu_manage"
+                android:title="Clear report" />
+
+        </menu>
+
+    </item>
+
+</menu>

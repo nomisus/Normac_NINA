@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="city_array">
+        <item>Select Option</item>
+        <item>Abbotsford</item>
+        <item>Burnaby</item>
+        <item>Chilliwack</item>
+        <item>Coquitlam</item>
+        <item>Delta</item>
+        <item>Ladner</item>
+        <item>Langley (City)</item>
+        <item>Langley (Town)</item>
+        <item>Maple Ridge</item>
+        <item>Mission</item>
+        <item>New Westminster</item>
+        <item>North Vancouver (District)</item>
+        <item>North Vancouver (City)</item>
+        <item>Pitt Meadows</item>
+        <item>Port Coquitlam</item>
+        <item>Port Moody</item>
+        <item>Richmond</item>
+        <item>Surrey</item>
+        <item>Tsawwassen</item>
+        <item>UBC</item>
+        <item>Vancouver</item>
+        <item>West Vancouver</item>
+        <item>White Rock</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="province_array">
+        <item>Select Option</item>
+        <item>Alberta</item>
+        <item>British Columbia</item>
+        <item>Ontario</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="appraisalType_array">
+        <item>Select Option</item>
+        <item>Current</item>
+        <item>Retrospective</item>
+        <item>Prospective</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="empList_array">
+        <item>Select Option</item>
+        <item>Aaron</item>
+        <item>Alfred</item>
+        <item>Cameron</item>
+        <item>Herman</item>
+        <item>Jerry</item>
+        <item>Lauren</item>
+        <item>Liam</item>
+        <item>Wai Sum</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="quality_array">
+        <item>Select Option</item>
+        <item>Above average</item>
+        <item>Average</item>
+        <item>Below average</item>
+    </string-array>
+
+    <string-array name="buildingFrame_array">
+        <item>Select Option</item>
+        <item>brick</item>
+        <item>concrete</item>
+        <item>concrete block</item>
+        <item>concrete tilt-up</item>
+        <item>masonry</item>
+        <item>mixed</item>
+        <item>steel</item>
+        <item>wood</item>
+    </string-array>
+
+    <string-array name="propType_array">
+        <item>Select Option</item>
+        <item>commercial</item>
+        <item>mixed</item>
+        <item>non-profit</item>
+        <item>residential</item>
+        <item>other</item>
+    </string-array>
+
+    <string-array name="buildingType1_array">
+        <item>Select Option</item>
+        <item>air space parcel</item>
+        <item>apartment</item>
+        <item>bare land strata</item>
+        <item>church</item>
+        <item>commercial</item>
+        <item>duplex</item>
+        <item>industrial</item>
+        <item>light industrial</item>
+        <item>medical</item>
+        <item>mixed</item>
+        <item>retail</item>
+        <item>residential</item>
+        <item>school</item>
+        <item>shopping mall</item>
+        <item>strata resort</item>
+        <item>townhome</item>
+        <item>triplex</item>
+        <item>warehouse</item>
+        <item>other</item>
+    </string-array>
+
+    <string-array name="buildingType2_array">
+        <item>Select Option</item>
+        <item>building</item>
+        <item>development</item>
+    </string-array>
+
+    <string-array name="bcbcGroup_array">
+        <item>Select Option</item>
+        <item>apartment</item>
+        <item>automotive garage</item>
+        <item>bank</item>
+        <item>barber</item>
+        <item>bowling alley</item>
+        <item>church</item>
+        <item>community hall</item>
+        <item>dental office</item>
+        <item>department store</item>
+        <item>dormitory</item>
+        <item>factory</item>
+        <item>grocery store</item>
+        <item>group home</item>
+        <item>gym</item>
+        <item>health care facility</item>
+        <item>hospital</item>
+        <item>hotel/motel</item>
+        <item>jail</item>
+        <item>laboratory</item>
+        <item>laundromat</item>
+        <item>library</item>
+        <item>light industrial</item>
+        <item>medical office</item>
+        <item>mixed (res/comm)</item>
+        <item>museum</item>
+        <item>nursing home</item>
+        <item>processing plant</item>
+        <item>restaurant</item>
+        <item>retail</item>
+        <item>school</item>
+        <item>theatre</item>
+        <item>townhome</item>
+        <item>warehouse</item>
+        <item>workshop</item>
+        <item>other</item>
+    </string-array>
+
+    <string-array name="featFloorNo_array">
+        <item>Select Option</item>
+        <item>on grade</item>
+        <item>over crawl space</item>
+        <item>over multi-level parkade</item>
+        <item>other parkade</item>
+        <item>other</item>
+    </string-array>
+
+    <string-array name="featFloorNoOther_array">
+        <item>Select Option</item>
+        <item>with penthouse</item>
+        <item>with mezzanine</item>
+        <item>other</item>
+    </string-array>
+
+    <string-array name="featPropRights_array">
+        <item>Select Option</item>
+        <item>freehold interest</item>
+        <item>leasehold</item>
+        <item>other</item>
+    </string-array>
+
+    <string-array name="featBuildClass_array">
+        <item>Select Option</item>
+        <item>A - Steel &amp; Masonry</item>
+        <item>B - Concrete</item>
+        <item>C - Masonry</item>
+        <item>D - Wood</item>
+        <item>S - Steel</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="featExcav_array">
+        <item>Select Option</item>
+        <item>For lowest level and foundations</item>
+        <item>For lowest levels and foundations</item>
+        <item>Other</item>
+    </string-array>
+    
+    <string-array name="featFound_array">
+        <item>Select Option</item>
+        <item>concrete footings (house)</item>
+        <item>concrete footings and grade beams (TH)</item>
+        <item>concrete footings and piles (high-rise)</item>
+        <item>other</item>
+    </string-array>
+    
+    <string-array name="featExtFrame_array">
+        <item>Select Option</item>
+        <item>masonry</item>
+        <item>reinforced concrete</item>
+        <item>reinforced concrete tilt-up</item>
+        <item>steel</item>
+        <item>wood</item>
+        <item>wood (post &amp; beam)</item>
+        <item>other</item>
+    </string-array>
+
+    <string-array name="featIntFrame_array">
+        <item>Select Option</item>
+        <item>concrete</item>
+        <item>studs, part concrete</item>
+        <item>wood</item>
+        <item>wood, part concrete</item>
+        <item>wood, post &amp; beam</item>
+        <item>other</item>
+    </string-array>
+
+    <string-array name="featExtClad_array">
+        <item>Select Option</item>
+        <item>brick</item>
+        <item>concrete</item>
+        <item>concrete block</item>
+        <item>fibre-cement board</item>
+        <item>glass</item>
+        <item>metal</item>
+        <item>stone</item>
+        <item>stucco</item>
+        <item>vinyl</item>
+        <item>wood</item>
+        <item>other</item>
+    </string-array>
+
+    <string-array name="featLowFl_array">
+        <item>Select Option</item>
+        <item>reinforced concrete slab</item>
+        <item>reinforced concrete slab with suspended slab over parkade</item>
+        <item>reinforced concrete slab with suspended slab over parkade &amp; commercial</item>
+        <item>wood joists  decking</item>
+        <item>wood sub-floor over concrete</item>
+        <item>wood sub-floor over crawl space</item>
+        <item>other</item>
+    </string-array>
+
+    <string-array name="featUppFl_array">
+        <item>Select Option</item>
+        <item>steel joists with slab</item>
+        <item>steel joists with wood decking</item>
+        <item>suspended concrete slab suspended concrete slab</item>
+        <item>wood joists decking</item>
+        <item>wood joists decking with concrete topping</item>
+        <item>n/a</item>
+        <item>other</item>
+    </string-array>
+
+    <string-array name="featRoofStr_array">
+        <item>Select Option</item>
+        <item>metal joists and deck</item>
+        <item>metal joists and wood deck</item>
+        <item>suspended concrete slab</item>
+        <item>wood joists and decking</item>
+        <item>wood joists and deck; part truss</item>
+        <item>other</item>
+    </string-array>
+
+    <string-array name="featRoofMat_array">
+        <item>Select Option</item>
+        <item>asphalt</item>
+        <item>built-up</item>
+        <item>concrete tile</item>
+        <item>EPDM</item>
+        <item>metal</item>
+        <item>wood shakes</item>
+        <item>wood shingles</item>
+        <item>other</item>
+    </string-array>
+
+    <string-array name="intCeiling_array">
+        <item>Select Option</item>
+        <item>acoustic tiles</item>
+        <item>conc. - exp</item>
+        <item>conc. - paint</item>
+        <item>exp structure</item>
+        <item>painted surfaces</item>
+        <item>stippled surfaces</item>
+        <item>other</item>
+    </string-array>
+
+    <string-array name="intWalls_array">
+        <item>Select Option</item>
+        <item>conc. - exp</item>
+        <item>conc. - paint</item>
+        <item>drywall - painted</item>
+        <item>drywall - unfin</item>
+        <item>exp structure</item>
+        <item>mirrored</item>
+        <item>wallpapered</item>
+        <item>other</item>
+    </string-array>
+
+    <string-array name="intFloor_array">
+        <item>Select Option</item>
+        <item>carpet</item>
+        <item>ceramic tile</item>
+        <item>conc. - exp</item>
+        <item>conc. - paint</item>
+        <item>hardwood</item>
+        <item>laminate</item>
+        <item>linoleum</item>
+        <item>marble</item>
+        <item>rubber</item>
+        <item>slate</item>
+        <item>vinyl</item>
+        <item>other</item>
+    </string-array>
+
+    <string-array name="intAppFireplace_array">
+        <item>Select Option</item>
+        <item>per suite</item>
+        <item>in property</item>
+        <item>other</item>
+    </string-array>
+    
+    <string-array name="intAppBrand_array">
+        <item>Select Option</item>
+        <item>AEG</item>
+        <item>Bosch</item>
+        <item>Fisher &amp; Paykel</item>
+        <item>Frigidaire</item>
+        <item>LG</item>
+        <item>Liebherr</item>
+        <item>Maytag</item>
+        <item>Miele</item>
+        <item>Samsung</item>
+        <item>Sub-Zero/Wolf</item>
+        <item>Whirlpool</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="intAppQuality_array">
+        <item>Select Option</item>
+        <item>High-End</item>
+        <item>Average</item>
+        <item>Low-End</item>
+        <item>Other</item>
+    </string-array>
+    
+    <string-array name="intAppStyle_array">
+        <item>Select Option</item>
+        <item>Apartment - Black</item>
+        <item>Apartment - White</item>
+        <item>Apartment - SS</item>
+        <item>Full - Black</item>
+        <item>Full - White</item>
+        <item>Full - SS</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="cmnBuildApp_array">
+        <item>Select Option</item>
+        <item>Strata/Bldg</item>
+        <item>Leased</item>
+        <item>n/a</item>
+    </string-array>
+
+    <string-array name="yesNo_array">
+        <item>Select Option</item>
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+
+</resources>

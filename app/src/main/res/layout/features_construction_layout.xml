@@ -1,0 +1,574 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/featMainLayout">
+
+    <TextView
+        android:id="@+id/lblListItem"
+        android:text="@string/structFeat"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:textColor="@android:color/black"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/featSpinnerLayout">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:columnOrderPreserved="false"
+            android:id="@+id/featSpinnerGrid">
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:layout_rowSpan="10"
+                android:id="@+id/featSpinnerGridSpace" />
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_row="0"
+                android:layout_column="2"
+                android:layout_rowSpan="11"
+                android:id="@+id/featSpinnerGridSpace1" />
+
+            <TextView
+                android:id="@+id/lblFeatPrimary"
+                android:text="@string/primary"
+                android:textStyle="italic"
+                android:layout_width="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textIsSelectable="true"
+                android:layout_row="0"
+                android:layout_column="3"
+                android:layout_gravity="center_horizontal" />
+
+            <Spinner
+                android:id="@+id/spinnerFeatExcav"
+                android:background="@drawable/spinner_background_holo_light"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:entries="@array/featExcav_array"
+                android:layout_row="1"
+                android:layout_column="3"
+                android:spinnerMode="dropdown" />
+
+            <Spinner
+                android:id="@+id/spinnerFeatExcavAdd1"
+                android:background="@drawable/spinner_background_holo_light"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:entries="@array/featExcav_array"
+                android:layout_row="1"
+                android:layout_column="5"
+                android:spinnerMode="dropdown" />
+
+            <Spinner
+                android:id="@+id/spinnerFeatExcavAdd2"
+                android:background="@drawable/spinner_background_holo_light"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:entries="@array/featExcav_array"
+                android:layout_row="1"
+                android:layout_column="7"
+                android:spinnerMode="dropdown" />
+
+            <Spinner
+                android:id="@+id/spinnerFeatFound"
+                android:background="@drawable/spinner_background_holo_light"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:entries="@array/featFound_array"
+                android:layout_row="2"
+                android:layout_column="3"
+                android:spinnerMode="dropdown" />
+
+            <Spinner
+                android:id="@+id/spinnerFeatFoundAdd1"
+                android:background="@drawable/spinner_background_holo_light"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:entries="@array/featFound_array"
+                android:layout_row="2"
+                android:layout_column="5"
+                android:spinnerMode="dropdown" />
+
+            <Spinner
+                android:id="@+id/spinnerFeatFoundAdd2"
+                android:background="@drawable/spinner_background_holo_light"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:entries="@array/featFound_array"
+                android:layout_row="2"
+                android:layout_column="7"
+                android:spinnerMode="dropdown" />
+
+            <Spinner
+                android:id="@+id/spinnerExtFrame"
+                android:background="@drawable/spinner_background_holo_light"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:entries="@array/featExtFrame_array"
+                android:layout_row="3"
+                android:layout_column="3"
+                android:spinnerMode="dropdown" />
+
+            <Spinner
+                android:id="@+id/spinnerExtFrameAdd1"
+                android:background="@drawable/spinner_background_holo_light"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:entries="@array/featExtFrame_array"
+                android:layout_row="3"
+                android:layout_column="5"
+                android:spinnerMode="dropdown" />
+
+            <Spinner
+                android:id="@+id/spinnerExtFrameAdd2"
+                android:background="@drawable/spinner_background_holo_light"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:entries="@array/featExtFrame_array"
+                android:layout_row="3"
+                android:layout_column="7"
+                android:spinnerMode="dropdown" />
+
+            <Spinner
+                android:id="@+id/spinnerIntFrame"
+                android:background="@drawable/spinner_background_holo_light"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:entries="@array/featIntFrame_array"
+                android:layout_row="4"
+                android:layout_column="3"
+                android:spinnerMode="dropdown" />
+
+            <Spinner
+                android:id="@+id/spinnerIntFrameAdd1"
+                android:background="@drawable/spinner_background_holo_light"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:entries="@array/featIntFrame_array"
+                android:layout_row="4"
+                android:layout_column="5"
+                android:spinnerMode="dropdown" />
+
+            <Spinner
+                android:id="@+id/spinnerIntFrameAdd2"
+                android:background="@drawable/spinner_background_holo_light"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:entries="@array/featIntFrame_array"
+                android:layout_row="4"
+                android:layout_column="7"
+                android:spinnerMode="dropdown" />
+
+            <Spinner
+                android:id="@+id/spinnerExtClad"
+                android:background="@drawable/spinner_background_holo_light"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:entries="@array/featExtClad_array"
+                android:layout_row="5"
+                android:layout_column="3"
+                android:spinnerMode="dropdown" />
+
+            <Spinner
+                android:id="@+id/spinnerExtCladAdd1"
+                android:background="@drawable/spinner_background_holo_light"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:entries="@array/featExtClad_array"
+                android:layout_row="5"
+                android:layout_column="5"
+                android:spinnerMode="dropdown" />
+
+            <Spinner
+                android:id="@+id/spinnerExtCladAdd2"
+                android:background="@drawable/spinner_background_holo_light"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:entries="@array/featExtClad_array"
+                android:layout_row="5"
+                android:layout_column="7"
+                android:spinnerMode="dropdown" />
+
+            <Spinner
+                android:id="@+id/spinnerLowFl"
+                android:background="@drawable/spinner_background_holo_light"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:entries="@array/featLowFl_array"
+                android:layout_row="6"
+                android:layout_column="3"
+                android:spinnerMode="dropdown" />
+
+            <Spinner
+                android:id="@+id/spinnerLowFlAdd1"
+                android:background="@drawable/spinner_background_holo_light"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:entries="@array/featLowFl_array"
+                android:layout_row="6"
+                android:layout_column="5"
+                android:spinnerMode="dropdown" />
+
+            <Spinner
+                android:id="@+id/spinnerLowFlAdd2"
+                android:background="@drawable/spinner_background_holo_light"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:entries="@array/featLowFl_array"
+                android:layout_row="6"
+                android:layout_column="7"
+                android:spinnerMode="dropdown" />
+
+            <Spinner
+                android:id="@+id/spinnerUppFl"
+                android:background="@drawable/spinner_background_holo_light"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:entries="@array/featUppFl_array"
+                android:layout_row="7"
+                android:layout_column="3"
+                android:spinnerMode="dropdown" />
+
+            <Spinner
+                android:id="@+id/spinnerUppFlAdd1"
+                android:background="@drawable/spinner_background_holo_light"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:entries="@array/featUppFl_array"
+                android:layout_row="7"
+                android:layout_column="5"
+                android:spinnerMode="dropdown" />
+
+            <Spinner
+                android:id="@+id/spinnerUppFlAdd2"
+                android:background="@drawable/spinner_background_holo_light"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:entries="@array/featUppFl_array"
+                android:layout_row="7"
+                android:layout_column="7"
+                android:spinnerMode="dropdown" />
+
+            <Spinner
+                android:id="@+id/spinnerRoofStr"
+                android:background="@drawable/spinner_background_holo_light"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:entries="@array/featRoofStr_array"
+                android:layout_row="8"
+                android:layout_column="3"
+                android:spinnerMode="dropdown" />
+
+            <Spinner
+                android:id="@+id/spinnerRoofStrAdd1"
+                android:background="@drawable/spinner_background_holo_light"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:entries="@array/featRoofStr_array"
+                android:layout_row="8"
+                android:layout_column="5"
+                android:spinnerMode="dropdown" />
+
+            <Spinner
+                android:id="@+id/spinnerRoofStrAdd2"
+                android:background="@drawable/spinner_background_holo_light"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:entries="@array/featRoofStr_array"
+                android:layout_row="8"
+                android:layout_column="7"
+                android:spinnerMode="dropdown" />
+
+            <Spinner
+                android:id="@+id/spinnerRoofMat"
+                android:background="@drawable/spinner_background_holo_light"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:entries="@array/featRoofMat_array"
+                android:layout_row="9"
+                android:layout_column="3"
+                android:spinnerMode="dropdown" />
+
+            <Spinner
+                android:id="@+id/spinnerRoofMatAdd1"
+                android:background="@drawable/spinner_background_holo_light"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:entries="@array/featRoofMat_array"
+                android:layout_row="9"
+                android:layout_column="5"
+                android:spinnerMode="dropdown" />
+
+            <Spinner
+                android:id="@+id/spinnerRoofMatAdd2"
+                android:background="@drawable/spinner_background_holo_light"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:entries="@array/featRoofMat_array"
+                android:layout_row="9"
+                android:layout_column="7"
+                android:spinnerMode="dropdown" />
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_row="0"
+                android:layout_column="4"
+                android:layout_rowSpan="10"
+                android:id="@+id/featSpinnerGridSpace3" />
+
+            <TextView
+                android:id="@+id/lblFeatAdd"
+                android:text="@string/additional"
+                android:textStyle="italic"
+                android:layout_width="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textIsSelectable="true"
+                android:layout_row="0"
+                android:layout_column="5"
+                android:layout_gravity="center_horizontal" />
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_row="0"
+                android:layout_column="6"
+                android:layout_rowSpan="10"
+                android:id="@+id/featSpinnerGridSpace4" />
+
+            <TextView
+                android:id="@+id/lblFeatAdd1"
+                android:text="@string/additional"
+                android:textStyle="italic"
+                android:layout_width="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textIsSelectable="true"
+                android:layout_row="0"
+                android:layout_column="7"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:id="@+id/lblExcavations"
+                android:text="@string/excavations"
+                android:layout_width="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textIsSelectable="true"
+                android:layout_row="1"
+                android:layout_column="1" />
+
+            <TextView
+                android:id="@+id/lblFoundation"
+                android:text="@string/foundations"
+                android:layout_width="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textIsSelectable="true"
+                android:layout_row="2"
+                android:layout_column="1" />
+
+            <TextView
+                android:id="@+id/lblExtFrame"
+                android:text="@string/extFrame"
+                android:layout_width="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textIsSelectable="true"
+                android:layout_row="3"
+                android:layout_column="1" />
+
+            <TextView
+                android:id="@+id/lblIntFrame"
+                android:text="@string/intFrame"
+                android:layout_width="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textIsSelectable="true"
+                android:layout_row="4"
+                android:layout_column="1" />
+
+            <TextView
+                android:id="@+id/lblExtClad"
+                android:text="@string/extclad"
+                android:layout_width="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textIsSelectable="true"
+                android:layout_row="5"
+                android:layout_column="1" />
+
+            <TextView
+                android:id="@+id/lblLowFl"
+                android:text="@string/lowFl"
+                android:layout_width="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textIsSelectable="true"
+                android:layout_row="6"
+                android:layout_column="1" />
+
+            <TextView
+                android:id="@+id/lblUppFl"
+                android:text="@string/uppFl"
+                android:layout_width="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textIsSelectable="true"
+                android:layout_row="7"
+                android:layout_column="1" />
+
+            <TextView
+                android:id="@+id/lblRoofStr"
+                android:text="@string/roofStr"
+                android:layout_width="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textIsSelectable="true"
+                android:layout_row="8"
+                android:layout_column="1" />
+
+            <TextView
+                android:id="@+id/lblRoofMat"
+                android:text="@string/roofMat"
+                android:layout_width="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textIsSelectable="true"
+                android:layout_row="9"
+                android:layout_column="1" />
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_row="0"
+                android:layout_column="8"
+                android:id="@+id/space8" />
+        </GridLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/featChckbxLayout1">
+
+        <TextView
+            android:id="@+id/lblExtra"
+            android:text="@string/extra"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            />
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:columnOrderPreserved="false"
+            android:id="@+id/featChckbxGrid2">
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:layout_rowSpan="5"
+                android:id="@+id/featChckbxGridSpace2" />
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_row="0"
+                android:layout_column="2"
+                android:layout_rowSpan="5"
+                android:id="@+id/featInfoGridSpace5" />
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_row="0"
+                android:layout_column="4"
+                android:layout_rowSpan="5"
+                android:id="@+id/featInfoGridSpace6" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/feat_chkbx31"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:checked="false"
+                android:text="@string/feat_chkbx31" />
+
+
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/feat_chkbx32"
+                android:layout_row="1"
+                android:layout_column="1"
+                android:checked="false"
+                android:text="@string/feat_chkbx32" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/feat_chkbx33"
+                android:layout_row="0"
+                android:layout_column="3"
+                android:checked="false"
+                android:text="@string/feat_chkbx33" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/feat_chkbx34"
+                android:layout_row="1"
+                android:layout_column="3"
+                android:checked="false"
+                android:text="@string/feat_chkbx34" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/feat_chkbx35"
+                android:layout_row="0"
+                android:layout_column="5"
+                android:checked="false"
+                android:text="@string/feat_chkbx35" />
+
+        </GridLayout>
+    </LinearLayout>
+</LinearLayout>
+

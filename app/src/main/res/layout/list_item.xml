@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+    android:id="@+id/lblListItem"
+    android:layout_width="wrap_content"
+    android:textColor="@android:color/black"
+    android:layout_height="wrap_content"
+    android:textSize="29sp"
+    android:textIsSelectable="true" />
+
+    <include layout="@layout/general_report_edittext_layout"></include>
+
+    <Space
+        android:id="@+id/space"
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+
+    <include layout="@layout/landscape_layout"></include>
+
+    <Space
+        android:id="@+id/space1"
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+
+    <include layout="@layout/features_general_layout"></include>
+
+    <Space
+        android:id="@+id/space2"
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+
+    <include layout="@layout/features_construction_layout"></include>
+
+    <Space
+        android:id="@+id/space3"
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+
+    <include layout="@layout/interior_finishes_layout"></include>
+
+    <Space
+        android:id="@+id/space4"
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+
+    <include layout="@layout/interior_appliances_layout"></include>
+
+    <Space
+        android:id="@+id/space5"
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+
+    <include layout="@layout/mechanical_layout"></include>
+
+    <Space
+        android:id="@+id/space6"
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+
+    <include layout="@layout/safety_security_layout"></include>
+
+    <Space
+        android:id="@+id/space7"
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+
+    <include layout="@layout/notes_layout"></include>
+
+    <Space
+        android:id="@+id/space8"
+        android:layout_width="match_parent"
+        android:layout_height="150dp" />
+
+</LinearLayout>
+
